@@ -1,0 +1,243 @@
+body {
+	background-color: black;
+  }
+  * {
+	margin: 0;
+	padding: 0;
+	  font-family: "arcadeclassic";
+  }
+  .box {
+	width: 800px;
+	height: 600px;
+	background-color: white;
+	position: relative;
+	overflow: hidden;
+	border-bottom: 10px solid white;
+  }
+  
+  .start {
+	  z-index: 6;
+	  position: relative;
+	  top: 0;
+	  left: 0;
+	  height: 100%;
+	  width: 100%;
+	  background-color: white;
+  }
+  
+  .game {
+	  z-index: 5;
+	  position: relative;
+	  top: 0;
+	  left: 0;
+	  height: 100%;
+	  width: 100%;
+  }
+  header {
+	font-size: 50px;
+	text-align: center;
+	margin-bottom: 30px;
+  }
+  span {
+	color: black;
+	  font-size: 60px;
+	  display: inline-block;
+	  position: relative;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%,-50%);
+	  cursor: pointer;
+  }
+  span:hover {
+	  font-size: 70px;
+  }
+  .title {
+	text-align: center;
+	font-size: 70px;
+	margin-bottom: 80px;
+  }
+  .inp {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  .rightGame {
+	position: relative;
+	height: 400px;
+	top: -100px;
+  }
+  .minHorizontal {
+	width: 100px;
+	height:2px;
+	background: black;
+	position: absolute;
+	bottom: 50px;
+	left: 10px;
+  }
+  .maxVertical {
+	width: 2px;
+	height:200px;
+	background: black;
+	position: absolute;
+	bottom: 50px;
+	left: 57px;
+  }
+  .maxHorizontal {
+	height: 2px;
+	width:150px;
+	background: black;
+	position: absolute;
+	bottom: 250px;
+	left: 57px;
+  }
+  .minVertical {
+	width: 3px;
+	height:50px;
+	background: black;
+	position: absolute;
+	bottom: 201px;
+	left: 205px;
+  }
+  .head {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	background-color: transparent;
+	border-radius: 50%;
+	border: 2px solid black;
+	top: 197px;
+	left: 176px;
+  }
+  .body {
+	position: relative;
+	width: 30px;
+	height: 70px;
+	background-color: transparent;
+	border-radius: 50%;
+	border: 2px solid black;
+	top: 197px;
+	left: 176px;
+  }
+  .leg1 {
+	position: relative;
+	width: 18px;
+	height: 50px;
+	background-color: transparent;
+	border-radius: 50%;
+	border: 2px solid black;
+	top: 109px;
+	left: 164px;
+	transform: rotate(210deg)
+  }
+  .leg2 {
+	position: relative;
+	width: 18px;
+	height: 50px;
+	background-color: transparent;
+	border-radius: 50%;
+	border: 2px solid black;
+	top: 60px;
+	left: 198px;
+	transform: rotate(150deg)
+  }
+  .hand1 {
+	position: relative;
+	width: 20px;
+	height: 40px;
+	background-color: transparent;
+	border-radius: 50%;
+	border: 2px solid black;
+	top: 127px;
+	left: 147px;
+	transform: rotate(-70deg)
+  }
+  .hand2 {
+	position: relative;
+	width: 20px;
+	height: 40px;
+	background-color: transparent;
+	border-radius: 50%;
+	border: 2px solid black;
+	top: 89px;
+	left: 214px;
+	transform: rotate(-290deg)
+  }
+  input {
+	border: 2px solid black !important;
+	outline: none !important;
+  }
+  .second,.third,.forth,.fifth,.sixth,.seventh {
+	visibility: hidden
+  }
+  .winning,.losing {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 20
+  }
+  .winning {
+	background-color: #25e652
+  }
+  .losing {
+	background-color: #c21b1b
+  }
+  .winning h1,.losing h1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%)
+  }
+  .point {
+	display: inline-block;
+	padding: 5px 10px;
+	border: 3px solid black;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 30px;
+	font-family: sans-serif;
+	font-weight: 900;
+  }
+  .uwon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 30;
+	text-align:center;
+	padding-top: 200px;
+	background-image: linear-gradient(to bottom right, 
+  #ff6969
+  , 
+  #ffb669
+  ,#f0ff69,#af69ff,#69ffe4);
+	animation: changeback 6s linear infinite alternate;
+  }
+  @keyframes changeback {
+   0%, 100% {
+	 background-size: 100% 1000%;
+   } 
+   50% {
+	 background-size: 100% 100%;
+   }
+  }
+	p {
+	  color: white;
+	animation: change 2s infinite;
+  }
+  
+  @keyframes change {
+	0%, 100% {
+	  font-size: 80px
+	}
+	50% {
+	  font-size: 90px;
+	}
+  }
